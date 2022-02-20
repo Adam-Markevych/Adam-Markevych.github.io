@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="block-input">
+    <div>
+        <input type="text" placeholder="title here..."  (input)="inp()" [(ngModel)]="title" class="inp">
+        <textarea  [(ngModel)]="text" placeholder="text here..." (input)="inp()" class="inp textarea"></textarea>
+        <input type="text" [(ngModel)]="author"placeholder="author here... " (input)="inp()" class="inp">
+    </div>
+    <div class="blockBtns">
+        <button type="submit" *ngIf="add" [disabled] = "disAdd" class="btn-add btn" (click)="btnAdd()">Add</button>
+        <button type="submit" *ngIf="save" [disabled] = "disSave" class="btn-save btn" (click)="btnSave()">Save</button>
+    </div>
+       
+    </div>
+    <div class="block-table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Text</th>
+                    <th>Author</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let i of blog let q = index">
+                <tr>
+                    <td>{{ i.id }}</td>
+                    <td>{{ i.title }}</td>
+                    <td>{{ i.text }}</td>
+                    <td>{{ i.author }}</td>
+                    <td><button type="submit" class="btnTable btn-edit"(click)="btnEdit(i)">Edit</button></td>
+                    <td><button type="submit" [disabled]= "disDelete" class="btnTable btn-delete"(click)="btnDelete(i)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+.inp{
+    display: block;
+    width: 100%;
+	margin-top: 20px;
+}
+.blockBtns{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.textarea{
+	resize: none;
+	height: 100px;
+}
+.btn{
+	border: 1px solid rgb(88, 88, 88);
+	width: 60px;
+	height: 30px;
+}
+.btnTable{
+	border: 1px solid rgb(88, 88, 88);
+	width: 70px;
+	height: 30px;
+}
+.btn-add{
+	background-color: rgb(0, 255, 0);
+}
+.btn-save{
+	background-color: rgb(34, 34, 255);
+}
+.btn-delete{
+	background-color: rgb(255, 0, 0);
+}
+.btn-edit{
+	background-color: rgb(0, 156, 109);
+}
+/*Start table*/
+.table {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+}
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+}
+.table thead tr th:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table thead tr th:last-child {
+	border-radius: 0 8px 8px 0;
+}
+.table tbody td {
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table tbody tr:nth-child(even){
+	background: #f3f3f3;
+}
+.table tbody tr td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table tbody tr td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+/*End table*/
